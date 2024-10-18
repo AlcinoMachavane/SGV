@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+.formContainer {
+    max-width: 1000px;
+    min-width: 300px;
+    /*    margin: 40px auto;*/
+}
+
+.standardForm{
+    background-color: white;
+    box-shadow: var(--my-box-shadow);
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.281);
+    padding: 20px 10px 10px 10px;
+    margin: 20px 10px;
+}
+
+.modal > .standardForm >.groupTitleWithCloseButton{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-basis: 100%;
+}
+
+.feedback{
+    color: lightcoral;
+    text-align: justify;
+    padding: 10px;
+    line-height: 1.2em;
+    border-bottom-right-radius: 10px;
+}
+
+.formTitle{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.281);
+    margin-bottom: 20px;
+    font-size: 13pt;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+.standardFormSubtitle{
+    font-size: 12px;
+    margin: 10px 0;
+    text-align: start;
+}
+
+.infoParagraph{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.standardFormDescription{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid rgba(207, 207, 207, 0.281);
+}
+
+.highlightedText{
+    font-weight: bold;
+}
+
+.suggestionOfPurpose{
+    padding: 10px 0;
+}
+
+.forInputsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.forInputs {
+    flex: 1 1 calc(33% - 10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.standardFormLabel{
+    margin: 10px 0;
+}
+
+.standardFormInput,
+.daysToApplyFineFormInput,
+.searchable-input {
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /*width: 100%;*/
+}
+
+.contacts-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.forInputs textarea {
+    flex: 1 1 100%;
+    height: 100px;
+}
+
+.button-container {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-align: right;
+    margin: 30px 0;
+}
+
+.contact-input-container{
+
+}
+
+.contetOnRow{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.contacts-list{
+    border: 1px solid #99ccff;
+    padding: 5px;
+    border-radius: 5px;
+
+    margin: 5px 0 0 5px;
+    line-height: 1.2em;
+}
+
+#contactsUl > li{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.remove-button{
+    background: none;
+    border: none;
+    padding: 0 5px;
+    align-items: center;
+}
+
+.remove-button > i{
+    border-radius: 25px;
+    color: deeppink;
+    font-size: 10pt;
+    padding: 2px;
+    border: 1px solid transparent;
+}
+
+.remove-button > i:hover{
+    border: 1px solid deeppink;
+}
+
+.productImagePreviewContainer{
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    flex-basis: 100%;
+    flex-direction: column;
+}
+
+.productImagePreviewContainerLabel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    flex-direction: column;
+}
+
+.productImagePreviewText{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--myLightBlue);
+}
+
+.productImagePreview{
+    margin: 10px;
+    border-radius: 5px;
+
+}
+.productImagePreview:hover{
+    transform: scale(0.97);
+}
+

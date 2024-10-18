@@ -1,0 +1,74 @@
+<!-- src/main/resources/templates/fragments/scripts.html -->
+
+<div th:fragment="appDataTableScripts" xmlns:th="http://www.thymeleaf.org">
+    <!--script para usu temporario-->
+    <script th:src="@{/jQuery/jquery-3.7.1.min.js}"></script>
+
+<!--    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>-->
+<!--script para usu temporario-->
+    <script th:src="@{/dataTable/js/dataTablesMin.js}"></script>
+    <script th:src="@{/dataTable/js/dataTables.js}"></script>
+
+<!--    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>-->
+<!--    <script src="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.20/datatables.min.js"></script>-->
+    <script th:src="@{/appStyle/appTable/appTable.css}"></script>
+    <script th:src="@{/appStyle/appSidebar/appSidebar.js}"></script>
+    <script th:src="@{/appStyle/appSidebar/appSidebarMediaQuery.js}"></script>
+    <script>
+
+        new DataTable('.table_on_profile_view', {
+            initComplete: function () {
+                this.api()
+                    .columns()
+                    .every(function () {
+                    let column = this;
+
+                    // Create select element
+                    let select = document.createElement('select');
+                    select.add(new Option(''));
+                    column.footer().replaceChildren(select);
+
+                    // Apply listener for user change in value
+                    select.addEventListener('change', function () {
+                        column
+                            .search(select.value, {exact: true})
+                            .draw();
+                    });
+
+                    // Add list of options
+                    column
+                        .data()
+                        .unique()
+                        .sort()
+                        .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+                });
+            },
+            language: {
+                "decimal":        "",
+                "emptyTable":     "Nenhum registro encontrado",
+                "info":           "Mostrando _START_ a _END_ de _TOTAL_ registros",
+                "infoEmpty":      "Mostrando 0 to 0 of 0 entries",
+                "infoFiltered":   "(Filtrado de _MAX_ total registros)",
+                "infoPostFix":    "",
+                "thousands":      ",",
+                "lengthMenu":     "Mostrar _MENU_ registros",
+                "loadingRecords": "Carregando...",
+                "processing":     "Processando...",
+                "search":         "Procurar:",
+                "zeroRecords":    "Nenhum registro correspondente encontrado",
+                "paginate": {
+                    "first":      "Primeiro",
+                    "last":       "Último",
+                    "next":       "Próximo",
+                    "previous":   "Anterior"
+                },
+                "aria": {
+                    "sortAscending":  ": ativar para ordenar a coluna em ordem crescente",
+                    "sortDescending": ": ativar para ordenar a coluna em ordem decrescente"
+                }
+            }
+        });
+    </script>
+</div>

@@ -1,0 +1,35 @@
+<div id="negativeAdjustmentFormID" th:fragment="negativeAdjustmentForm" xmlns:th="http://www.thymeleaf.org">
+    <div class="formContainer">
+
+        <div id="genericProductForm" class="standardForm">
+
+            <h1 class="formTitle"><i class="fa-solid fa-balance-scale-left"></i>Ajustes negativo</h1>
+
+            <div class="forInputsContainer">
+                <h3 class="standardFormSubtitle">Quantidade actual:</h3>
+                <p class="standardFormSubtitle">55 Un</p>
+            </div>
+
+            <div class="forInputsContainer">
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="adjustmentQuantity">Quantidade do ajuste</label>
+                    <input class="standardFormInput" type="text" id="adjustmentQuantity" name="adjustmentQuantity">
+                    <div id="adjustmentQuantityDocumentFeedback" class="feedback"></div>
+                </div>
+            </div>
+
+            <div class="forInputsContainer">
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="adjustmentReason">Razão do ajuste</label>
+                    <input class="standardFormInput" type="text" id="adjustmentReason" name="adjustmentReason">
+                    <div id="adjustmentReasonDocumentFeedback" class="feedback"></div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <!--        <button class="btn btn-cancel" type="reset">Descartar</button>-->
+                <a th:href="@{/stock}" class="btn btn-success" type="submit">Submeter</a>
+            </div>
+        </div>
+    </div>
+</div>

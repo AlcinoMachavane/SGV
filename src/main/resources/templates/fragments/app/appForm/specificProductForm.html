@@ -1,0 +1,147 @@
+<div id="specificProductFormID" class="modal" th:fragment="specificProductForm" xmlns:th="http://www.thymeleaf.org">
+
+    <div class="formContainer">
+
+        <form action="#" id="specificProductForm" class="standardForm">
+
+            <h1 class="formTitle">Cadastrar produto específico</h1>
+
+            <div class="productImagePreviewContainer">
+                <label class="productImagePreviewContainerLabel" for="productImage" title="Clica na imagem para adicionar ou alterar a actual" autofocus>
+                    <img class="productImagePreview" th:src="@{/images/systemImages/upload_image.png}" alt="Carregue imagem para produto" style="max-width: 300px; max-height: 200px; ">
+                    <span class="productImagePreviewText">Clica para carregar imagem do produto</span>
+                </label>
+                <input type="file" id="productImage" name="productImage" style="display: none">
+                <div id="productImageNameDocumentFeedback" class="feedback"></div>
+            </div>
+
+            <div class="forInputsContainer">
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="productName">Nome do produto *</label>
+                    <select id="productName" name="productName" class="searchable-input">
+                        <option></option>
+                        <option>Arroz</option>
+                        <option>Farinha de milho</option>
+                        <option>Açúcar</option>
+                        <option>Óleo de cozinha</option>
+                        <option>Feijão</option>
+                        <option>Sal</option>
+                        <option>Sabão</option>
+                        <option>Telefones móveis</option>
+                        <option>Computadores</option>
+                        <option>Televisores</option>
+                        <option>Móveis</option>
+                        <option>Roupa e calçado</option>
+                    </select>
+                    <div id="productNameDocumentFeedback" class="feedback"></div>
+                </div>
+
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="subcategory">Subcategoria</label>
+                    <input class="standardFormInput" type="text" id="subcategory" name="subcategory">
+                    <div id="subcategoryDocumentFeedback" class="feedback"></div>
+                </div>
+
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="productBrand">Marca *</label>
+                    <input class="standardFormInput" type="text" id="productBrand" name="productBrand">
+                    <div id="productBrandDocumentFeedback" class="feedback"></div>
+                </div>
+            </div>
+
+            <div class="forInputsContainer">
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="productModel">Modelo *</label>
+                    <input class="standardFormInput" type="text" id="productModel" name="productModel">
+                    <div id="productModelDocumentFeedback" class="feedback"></div>
+                </div>
+
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="productDescription">Descrição *</label>
+                    <input type="text" class="standardFormInput" id="productDescription"
+                              name="productDescription">
+                    <div id="productDescriptionDocumentFeedback" class="feedback"></div>
+                </div>
+
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="unitOfMeasurement">Unidade de medição</label>
+                    <input type="text" class="standardFormInput" id="unitOfMeasurement"
+                           name="unitOfMeasurement">
+                    <div id="unitOfMeasurementDocumentFeedback" class="feedback"></div>
+                </div>
+            </div>
+
+            <div class="forInputsContainer">
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="productSize">Tamanho</label>
+                    <input type="text" class="standardFormInput" id="productSize" name="productSize"></input>
+                    <div id="productSizeDocumentFeedback" class="feedback"></div>
+                </div>
+
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="productWeight">Peso</label>
+                    <input type="text" class="standardFormInput" id="productWeight" name="productWeight"></input>
+                    <div id="productWeightDocumentFeedback" class="feedback"></div>
+                </div>
+
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="productColor">Cor</label>
+                    <input type="text" class="standardFormInput" id="productColor" name="productColor"></input>
+                    <div id="productColorDocumentFeedback" class="feedback"></div>
+                </div>
+
+            </div>
+
+            <div class="forInputsContainer">
+
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="productHeight">Altura</label>
+                    <input type="text" class="standardFormInput" id="productHeight" name="productHeight"></input>
+                    <div id="productHeightDocumentFeedback" class="feedback"></div>
+                </div>
+
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="productWidth">Largura</label>
+                    <input type="text" class="standardFormInput" id="productWidth" name="productWidth"></input>
+                    <div id="productWidthDocumentFeedback" class="feedback"></div>
+                </div>
+
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="productDurability">Durabilidade *</label>
+                    <input type="text" id="productDurability" class="standardFormInput" name="productDurability">
+                    <div id="productDurabilityDocumentFeedback" class="feedback"></div>
+                </div>
+
+            </div>
+
+            <div class="forInputsContainer">
+
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="length">Comprimento</label>
+                    <input type="text" class="standardFormInput" id="length" name="length"></input>
+                    <div id="lengthDocumentFeedback" class="feedback"></div>
+                </div>
+
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="minimumStock">Stock mínimo</label>
+                    <input type="text" class="standardFormInput" id="minimumStock" name="minimumStock">
+                    <div id="minimumStockDocumentFeedback" class="feedback"></div>
+                </div>
+
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="maximumStock">Stock máximo</label>
+                    <input type="text" class="standardFormInput" id="maximumStock" name="maximumStock"></input>
+                    <div id="maximumStockDocumentFeedback" class="feedback"></div>
+                </div>
+
+            </div>
+
+
+            <div class="button-container">
+                <button class="btn btn-cancel" type="reset">Descartar</button>
+                <button class="btn btn-success" type="submit">Submeter</button>
+            </div>
+        </form>
+    </div>
+
+</div>

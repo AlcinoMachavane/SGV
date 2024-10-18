@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.smallButton{
+    background: transparent;
+    border: none;
+}
+
+.smallButton > i{
+    border-radius: 50%;
+    height: auto;
+    color: var(--myLightBlue);
+    background-color: var(--myLightBlueButton);
+    font-weight: bold;
+    font-size: 10pt;
+    box-shadow: var(--my-box-shadow);
+    border: 1px solid transparent;
+    padding: 2px;
+}
+
+.smallButton > i:not(last-child){
+    margin-right: 10px;
+}
+
+.smallButton > i:hover{
+    box-shadow: var(--my-box-shadow);
+    border: 1px solid var(--myLightBlue);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt">
+<head th:replace="~{fragments/app/appHead/appHeadProduct :: appHeadProduct}"></head>
+
+<!-- MOBILE BUTTON FOR SIDEBAR-->
+<div th:replace="~{fragments/app/appSidebar :: sidebarFragment}"></div>
+
+<main class="mainContent">
+    <!-- navBar.html -->
+    <div th:replace="~{fragments/app/appNavbar :: navbarFragment}"></div>
+    <!-- SUB NAVBAR-->
+    <nav class="subNavbar">
+        <div class="mobileDisplay">
+
+            <!-- Botão para abrir o modal de Produto Genérico -->
+            <a th:href="@{/lista_de_produtos_genericos}" class="btn btn-default" id="genericProductButton"
+               title="Ver lista de produtos genérico">
+                <i class="fa-solid fa-box-open"></i>
+            </a>
+            <!-- Botão para abrir o modal de Produto Específico -->
+            <a th:href="@{/lista_de_produtos_especificos}" class="btn btn-default" id="specificProductButton"
+               title="Ver lista de produtos específicos">
+                <i class="fa-solid fa-cube"></i>
+            </a>
+
+        </div>
+    </nav>
+
+<!--    mainContentJustifyWithoutSubMenu-->
+    <div class="mainContentJustify">
+
+
+    </div>
+
+    <div th:replace="~{fragments/app/appFooter :: footerFragment}"></div>
+
+</main>
+<div th:replace="~{fragments/app/appScripts/appDataTableScripts :: appDataTableScripts}"></div>
+</body>
+</html>

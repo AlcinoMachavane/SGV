@@ -1,0 +1,29 @@
+<!-- src/main/resources/templates/fragments/sidebar.html -->
+
+<div th:fragment="sidebarFragment" xmlns:th="http://www.thymeleaf.org">
+    <!-- MOBILE BUTTON FOR SIDEBAR -->
+    <span id="buttonForBarMobile" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </span>
+
+    <aside id="menu" class="menuBar sidebar-hidden">
+        <ul>
+            <li id="buttonForBar">
+                <i class="fa-regular fa-circle-xmark" id="xmark"></i>
+                <i class="fa-solid fa-bars" id="bars"></i>
+            </li>
+            <li>
+                <a th:href="@{/vendas}"><i class="fas fa-shopping-bag"></i> Vendas</a>
+            </li>
+            <li>
+                <a th:href="@{/produtos}"><i class="fa-solid fa-box"></i> Produtos</a>
+            </li>
+            <li>
+                <a th:href="@{/stock}"><i class="fa-solid fa-warehouse"></i> Stock</a>
+            </li>
+            <li>
+                <a th:href="@{/}"> <i class="fa-solid fa-arrow-right-from-bracket"></i> Sair </a>
+            </li>
+        </ul>
+    </aside>
+</div>

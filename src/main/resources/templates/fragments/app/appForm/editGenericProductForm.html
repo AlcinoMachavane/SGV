@@ -1,0 +1,31 @@
+<div id="editGenericProductFormID" class="modal" th:fragment="editGenericProductForm" xmlns:th="http://www.thymeleaf.org">
+    <div class="formContainer">
+
+        <div id="genericProductForm" class="standardForm">
+
+            <h1 class="formTitle"><i class="fa-solid fa-box-open"></i>Editar produto genérico</h1>
+            <div class="forInputsContainer">
+
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="genProductName">Nome do produto *</label>
+                    <input type="text" id="genProductName" name="genProductName" class="standardFormInput"
+                           autofocus>
+                    <div id="genProductNameDocumentFeedback" class="feedback"></div>
+                </div>
+            </div>
+
+            <div class="forInputsContainer">
+                <div class="forInputs">
+                    <label class="standardFormLabel" for="genProductCategory">Categoria *</label>
+                    <input type="text" id="genProductCategory" class="standardFormInput" name="genProductCategory">
+                    <div id="genProductCategoryDocumentFeedback" class="feedback"></div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button class="btn btn-cancel" type="reset">Descartar</button>
+                <button class="btn btn-success" type="submit">Submeter</button>
+            </div>
+        </div>
+    </div>
+</div>

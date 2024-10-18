@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt">
+<head th:replace="~{fragments/app/appHead/appHeadWithExpansiveTable :: appHeadWithExpansiveTable}"></head>
+
+<!-- MOBILE BUTTON FOR SIDEBAR-->
+<div th:replace="~{fragments/app/appSidebar :: sidebarFragment}"></div>
+
+<main class="mainContent">
+    <!-- navBar.html -->
+    <div th:replace="~{fragments/app/appNavbar :: navbarFragment}"></div>
+    <!-- SUB NAVBAR-->
+
+    <!--    mainContentJustifyWithoutSubMenu-->
+    <div class="mainContentJustifyWithoutSubMenu">
+        <!--  TABLE Conteiner-->
+        <div class="justifyItems">
+            <div class="tableContainer">
+                <table class="styled-table">
+                    <thead>
+                    <tr>
+                        <th colspan="1">#</th>
+                        <th colspan="2">Produto</th>
+                        <th colspan="2">Agentes</th>
+                        <th colspan="1">Data</th>
+                        <th colspan="1">Nº de itens</th>
+                        <th colspan="1">Valor total</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <!-- Produto 1 -->
+                    <tr class="mainRow" data-toggle="collapse" data-target=".row1">
+                        <th colspan="1">1</th>
+                        <th colspan="1">Nome do produto</th>
+                        <th colspan="1">Descrição</th>
+                        <th colspan="1">Usuário</th>
+                        <th colspan="1">Fornrcedor</th>
+                        <th colspan="1">Data da compra</th>
+                        <th colspan="1">qtd.(em 68)</th>
+                        <th colspan="1">Preço.Un(em 90 000,00)</th>
+                    </tr>
+                    <tr class="hiddenRow row1">
+                        <td colspan="1">
+                            <img class="productImage" alt="gamer laptop"
+                                             th:src="@{/images/productImages/electronics/gamer_lap.png}">
+                        </td>
+                        <th colspan="1">Laptop</th>
+                        <td colspan="1">laptop com
+                            processador AMD Ryzen 7, 8GB de RAM e 512GB de armazenamento SSD, Peso: 3 KG, Durabilidade: 10 anos, Garantia: 1 ano
+                        </td>
+                        <td colspan="1">Carlos Mutota</td>
+                        <td colspan="1">Jumbo da matola</td>
+                        <td colspan="1">16/10/2024</td>
+                        <td colspan="1">5</td>
+                        <td colspan="1">18 000,00</td>
+                    </tr>
+                    </tbody>
+
+                    <tfoot>
+                    <tr>
+                        <th colspan="1">Total das compras:</th>
+                        <th colspan="7">90 000,00</th>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="cashflowformationDivGraphic">
+                <div class="graphicSide">
+                    <div class="chart-container">
+                        <canvas id="default" class="first"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div th:replace="~{fragments/app/appFooter :: footerFragment}"></div>
+
+</main>
+<div th:replace="~{fragments/app/appScripts/appExpansiveTableScripts :: appExpansiveTableScripts}"></div>
+</body>
+</html>

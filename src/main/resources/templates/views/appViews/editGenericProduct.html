@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt">
+<head th:replace="~{fragments/app/appHead/appHeadWithFormLinks :: appHeadWithFormLinks}"></head>
+
+<!-- MOBILE BUTTON FOR SIDEBAR-->
+<div th:replace="~{fragments/app/appSidebar :: sidebarFragment}"></div>
+
+<main class="mainContent">
+    <!-- navBar.html -->
+    <div th:replace="~{fragments/app/appNavbar :: navbarFragment}"></div>
+
+    <!--  Container FOR MAIN CONTENT-->
+    <div class="mainContentJustifyWithoutSubMenu">
+        <div th:replace="~{fragments/app/appForm/editGenericProductForm :: editGenericProductForm}"></div>
+    </div>
+
+    <div th:replace="~{fragments/app/appFooter :: footerFragment}"></div>
+
+</main>
+
+<div th:replace="~{fragments/app/appScripts/appExpansiveTableScripts :: appExpansiveTableScripts}"></div>
+
+
+</body>
+</html>

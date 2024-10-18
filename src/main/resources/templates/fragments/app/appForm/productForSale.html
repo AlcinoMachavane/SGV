@@ -1,0 +1,384 @@
+<div id="salesFormID" th:fragment="salesForm" xmlns:th="http://www.thymeleaf.org">
+    <div class="formContainer">
+
+        <div id="genericProductForm" class="standardForm">
+
+<!--            <h1 class="formTitle"><i class="fa-solid fa-balance-scale-left"> </i>Produtos</h1>-->
+
+<!--            <div class="forInputsContainer">-->
+
+<!--                <div class="forInputs">-->
+<!--                    <label class="standardFormLabel" for="productSearch">Pesquise</label>-->
+<!--                    <input class="standardFormInput" type="search" id="productSearch" name="productSearch">-->
+<!--                    <div id="productSearchDocumentFeedback" class="feedback"></div>-->
+<!--                </div>-->
+
+<!--                <div class="forInputs">-->
+<!--                    <label class="standardFormLabel" for="barcode">Insira o codigo de barras</label>-->
+<!--                    <input class="standardFormInput" type="text" id="barcode" name="barcode">-->
+<!--                    <div id="barcodeDocumentFeedback" class="feedback"></div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+
+            <div id="productList" class="productPanel">
+                <fieldset class="productContent">
+                    <label for="gamer_lap.png">
+                        <div class="product-details">
+                            <h2>Laptop Gamer</h2>
+                            <p>Processador: Intel Core i7</p>
+                            <p>Memória RAM: 16GB</p>
+                            <p>Armazenamento: 1TB SSD</p>
+                        </div>
+                    </label>
+                    <legend>Laptop</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="gamer laptop"
+                         th:src="@{/images/productImages/electronics/gamer_lap.png}">
+                        <input class="standardFormInput" type="text" id="gamer_lap.png"
+                               placeholder="Digite a quantidade">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="huawei.png">
+                        <div class="product-details">
+                            <h2>Smart Phone Huawei</h2>
+                            <p>Tela: 6,1 polegadas</p>
+                            <p>Processador: Kirin 990</p>
+                            <p>Memória RAM: 8GB</p>
+                        </div>
+                    </label>
+                    <legend>Smart Phone</legend>
+                    <span class="productImageContainer">
+                        <img class="productImage" alt="huawei" th:src="@{/images/productImages/electronics/huawei.png}">
+                        <input class="standardFormInput" type="text" id="huawei.png" placeholder="Digite a quantidade">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="ventoinha.png">
+                        <div class="product-details">
+                            <h2>Ventoinha</h2>
+                            <p>Potência: 50W</p>
+                            <p>Velocidade: 3 velocidades</p>
+                            <p>Material: Aço</p>
+                        </div>
+                    </label>
+                    <legend>Ventoinha</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="ventoinha"
+                         th:src="@{/images/productImages/electronics/ventoinha.jpg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="ventoinha.png">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="tp-link_router.png">
+                        <div class="product-details">
+                            <h2>tp-link_router</h2>
+                            <p>Potência: 50W</p>
+                            <p>Velocidade: 3 velocidades</p>
+                            <p>Material: Aço</p>
+                        </div>
+                    </label>
+                    <legend>tp-link_router</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="tp-link_router"
+                         th:src="@{/images/productImages/electronics/tp-link_router.jpg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="tp-link_router.png">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="jens.jpeg">
+                        <div class="product-details">
+                            <h2>Calça jens</h2>
+                            <p>Tamanho: 40</p>
+                            <p>Cor: Azul</p>
+                            <p>Material: Algodão</p>
+                        </div>
+                    </label>
+                    <legend>Calça jens</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="jens" th:src="@{/images/productImages/clothing/jens.jpeg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="jens.jpeg">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="oculos_femeninos.jpeg">
+                        <div class="product-details">
+                            <h2>Óculos femeninos</h2>
+                            <p>Cor: Rosa</p>
+                            <p>Material: Plástico</p>
+                            <p>Tamanho: 50mm</p>
+                        </div>
+                    </label>
+                    <legend>Óculos femeninos</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="oculos_femeninos"
+                         th:src="@{/images/productImages/clothing/oculos_femeninos.jpeg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="oculos_femeninos.jpeg">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="relogio_com_pulso_de_couro.jpg">
+                        <div class="product-details">
+                            <h2>Relógio com pulso de couro</h2>
+                            <p>Cor: Marrom</p>
+                            <p>Material: Couro</p>
+                            <p>Tamanho: 40mm</p>
+                        </div>
+                    </label>
+                    <legend>Relógio</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="relogio_com_pulso_de_couro"
+                         th:src="@{/images/productImages/clothing/relogio_com_pulso_de_couro.jpg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="relogio_com_pulso_de_couro.jpg">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="sapatilahas_femeninas.jpg">
+                        <div class="product-details">
+                            <h2>Sapatilahas femeninas</h2>
+                            <p>Tamanho: 37</p>
+                            <p>Cor: Preto</p>
+                            <p>Material: Couro</p>
+                        </div>
+                    </label>
+                    <legend>Sapatilahas</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="sapatilahas_femeninas"
+                         th:src="@{/images/productImages/clothing/sapatilahas_femeninas.jpg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="sapatilahas_femeninas.jpg">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="sapato.jpeg">
+                        <div class="product-details">
+                            <h2>Sapato</h2>
+                            <p>Tamanho: 40</p>
+                            <p>Cor: Marrom</p>
+                            <p>Material: Couro</p>
+                        </div>
+                    </label>
+                    <legend>Sapato</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="sapato" th:src="@{/images/productImages/clothing/sapato.jpeg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="sapato.jpeg">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="conjunto_de_pratos.png">
+                        <div class="product-details">
+                            <h2>Conjunto de pratos</h2>
+                            <p>Quantidade: 6</p>
+                            <p>Material: Porcelana</p>
+                            <p>Tamanho: 25cm</p>
+                        </div>
+                    </label>
+                    <legend>Conjunto de pratos</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="conjunto_de_pratos"
+                         th:src="@{/images/productImages/crockery/conjunto_de_pratos.png}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="conjunto_de_pratos.png">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="pratos.jpeg">
+                        <div class="product-details">
+                            <h2>Pratos</h2>
+                            <p>Quantidade: 4</p>
+                            <p>Material: Porcelana</p>
+                            <p>Tamanho: 20cm</p>
+                        </div>
+                    </label>
+                    <legend>Pratos</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="pratos" th:src="@{/images/productImages/crockery/pratos.jpeg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="pratos.jpeg">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="bife.jpg">
+                        <div class="product-details">
+                            <h2>Bife</h2>
+                            <p>Peso: 500g</p>
+                            <p>Cor: Vermelho</p>
+                            <p>Origem: Brasil</p>
+                        </div>
+                    </label>
+                    <legend>Bife</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="bife" th:src="@{/images/productImages/food/bife.jpg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="bife.jpg">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="blueribbonbread.jpg">
+                        <div class="product-details">
+                            <h2>Blue ribbon bread</h2>
+                            <p>Peso: 500g</p>
+                            <p>Cor: Branco</p>
+                            <p>Origem: EUA</p>
+                        </div>
+                    </label>
+                    <legend>Blue ribbon bread</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="blue_ribbon_bread"
+                         th:src="@{/images/productImages/food/blueribbonbread.jpg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="blueribbonbread.jpg">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="bolo_de_chocolate.jpeg">
+                        <div class="product-details">
+                            <h2>Bolo de chocolate</h2>
+                            <p>Peso: 1kg</p>
+                            <p>Cor: Marrom</p>
+                            <p>Origem: Brasil</p>
+                        </div>
+                    </label>
+                    <legend>Bolo de chocolate</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="bolo_de_chocolate"
+                         th:src="@{/images/productImages/food/bolo_de_chocolate.jpeg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="bolo_de_chocolate.jpeg">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="coca-cola_2L.jpeg">
+                        <div class="product-details">
+                            <h2>Coca-cola 2L</h2>
+                            <p>Volume: 2L</p>
+                            <p>Cor: Vermelho</p>
+                            <p>Origem: EUA</p>
+                        </div>
+                    </label>
+                    <legend>Coca-cola 2L</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="coca-cola_2L"
+                         th:src="@{/images/productImages/food/coca-cola_2L.jpeg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="coca-cola_2L.jpeg">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="embalagem_de_fanta_em_lata.png">
+                        <div class="product-details">
+                            <h2>Embalagem de fanta em lata</h2>
+                            <p>Volume: 1L</p>
+                            <p>Cor: Laranja</p>
+                            <p>Origem: Brasil</p>
+                        </div>
+                    </label>
+                    <legend>Embalagem de fanta</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="embalagem_de_fanta_em_lata"
+                         th:src="@{/images/productImages/food/embalagem_de_fanta_em_lata.png}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="embalagem_de_fanta_em_lata.png">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="mea_duzia_de_ovos.jpg">
+                        <div class="product-details">
+                            <h2>Meia duzia de ovos</h2>
+                            <p>Quantidade: 6</p>
+                            <p>Cor: Branco</p>
+                            <p>Origem: Brasil</p>
+                        </div>
+                    </label>
+                    <legend>Meia duzia de ovos</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="mea_duzia_de_ovos"
+                         th:src="@{/images/productImages/food/mea_duzia_de_ovos.jpg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="mea_duzia_de_ovos.jpg">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="sumo_3L.jpeg">
+                        <div class="product-details">
+                            <h2>Sumo 3L</h2>
+                            <p>Volume: 3L</p>
+                            <p>Cor: Laranja</p>
+                            <p>Origem: Brasil</p>
+                        </div>
+                    </label>
+                    <legend>Sumo 3L</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="sumo_3L" th:src="@{/images/productImages/food/sumo_3L.jpeg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="sumo_3L.jpeg">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="mesa_de_madeira.jpg">
+                        <div class="product-details">
+                            <h2>Mesa de madeira</h2>
+                            <p>Tamanho: 100x50cm</p>
+                            <p>Material: Madeira </p>
+                            <p>Cor: Marrom</p>
+                        </div>
+                    </label>
+                    <legend>Mesa de madeira</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="mesa_de_madeira"
+                         th:src="@{/images/productImages/furniture/mesa_de_madeira.jpg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="mesa_de_madeira.jpg">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="caderno_de_5_diciplinas.jpg">
+                        <div class="product-details">
+                            <h2>Caderno de 5 diciplinas</h2>
+                            <p>Quantidade de páginas: 100</p>
+                            <p>Tamanho: 20x15cm</p>
+                            <p>Material: Papel</p>
+                        </div>
+                    </label>
+                    <legend>Caderno</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="caderno_de_5_diciplinas"
+                         th:src="@{/images/productImages/schoolSupplies/caderno_de_5_diciplinas.jpg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="caderno_de_5_diciplinas.jpg">
+                    </span>
+                </fieldset>
+
+                <fieldset class="productContent">
+                    <label for="canetas.jpg">
+                        <div class="product-details">
+                            <h2>Canetas</h2>
+                            <p>Quantidade: 10</p>
+                            <p>Cor: Azul</p>
+                            <p>Material: Plástico</p>
+                        </div>
+                    </label>
+                    <legend>Canetas</legend>
+                    <span class="productImageContainer">
+                    <img class="productImage" alt="canetas"
+                         th:src="@{/images/productImages/schoolSupplies/canetas.jpg}">
+                        <input class="standardFormInput" placeholder="Digite a quantidade" type="text" id="canetas.jpg">
+                    </span>
+                </fieldset>
+            </div>
+
+<!--            <div class="button-container">-->
+                <!--        <button class="btn btn-cancel" type="reset">Descartar</button>-->
+<!--                <button class="btn btn-success" type="submit">Adicionar</button>-->
+            </div>
+        </div>
+    </div>
+</div>

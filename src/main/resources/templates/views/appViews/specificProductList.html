@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt">
+<head th:replace="~{fragments/app/appHead/appHeadProduct :: appHeadProduct}"></head>
+
+<!-- MOBILE BUTTON FOR SIDEBAR-->
+<div th:replace="~{fragments/app/appSidebar :: sidebarFragment}"></div>
+
+<main class="mainContent">
+    <!-- navBar.html -->
+    <div th:replace="~{fragments/app/appNavbar :: navbarFragment}"></div>
+    <!-- SUB NAVBAR-->
+    <nav class="subNavbar">
+        <div class="mobileDisplay">
+            <!-- Botão para abrir o modal de Produto Específico -->
+            <a th:href="@{/cadastro_de_produto_especifico}" class="btn btn-default" id="specificProductButton"
+               title="Cadastrar produto específico">
+                <i class="fa fa-plus"></i>
+            </a>
+
+        </div>
+    </nav>
+
+<!--    mainContentJustifyWithoutSubMenu-->
+    <div class="mainContentJustify">
+        <!--  TABLE Conteiner-->
+        <div class="tableConteiner">
+            <table class="display table_on_profile_view" style="width:100%">
+                <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>Imagem</th>
+                    <th>Nome do Produto</th>
+                    <th>Descrição</th>
+                    <th>Unidade de Medição</th>
+                    <th>Stock Máximo</th>
+                    <th>Stock Mínimo</th>
+                    <th class="active">Ações</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="product">
+                    <td>1</td>
+                    <td colspan="1"><img class="productImage" alt="gamer laptop"
+                                         th:src="@{/images/productImages/electronics/gamer_lap.png}"></td>
+                    <td>Laptop</td>
+                    <td>HP, ProBook 450 G5, Computador portátil de alta performance, 15.6 polegadas,2.1kg, Prata, Comprimento: 37cm</td>
+                    <td>Unidade</td>
+                    <td>100</td>
+                    <td>10</td>
+                    <td class="actionEye">
+                        <a th:href="@{/editar_produto_especifico}" title="Editar produto"><i class="fa-solid fa-edit"></i></a>
+                        <a href="deleteProduct.html"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                </tr>
+                <!-- Repita este bloco de tr para mais produtos -->
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th>Nº</th>
+                    <th>Nome do Produto</th>
+                    <th>Descrição</th>
+                    <th>Unidade de Medição</th>
+                    <th>Stock Máximo</th>
+                    <th>Stock Mínimo</th>
+<!--                    <th class="active">Ações</th>-->
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+
+    </div>
+
+    <div th:replace="~{fragments/app/appFooter :: footerFragment}"></div>
+
+</main>
+<div th:replace="~{fragments/app/appScripts/appDataTableScripts :: appDataTableScripts}"></div>
+</body>
+</html>
