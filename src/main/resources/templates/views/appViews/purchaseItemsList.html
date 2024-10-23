@@ -11,10 +11,9 @@
     <!-- SUB NAVBAR-->
     <nav class="subNavbar">
         <div class="mobileDisplay">
-
             <!-- Botão para abrir a lista de compras -->
-            <a th:href="@{/Lista_de_compras}" class="btn btn-default" title="Lista de compras">
-                <i class="fa-solid fa-clipboard-list"></i>
+            <a th:href="@{/adicionar_produto}" class="btn btn-default" title="Adicionar produto a lista">
+                <i class="fa fa-plus"></i>
             </a>
 
         </div>
@@ -22,10 +21,6 @@
 
     <!--  Container FOR MAIN CONTENT-->
     <div class="mainContentJustify">
-
-        <!-- Formulário para escolher produto e quantidade -->
-        <div th:replace="~{fragments/app/appForm/purchaseForm :: purchaseForm}"></div>
-
         <!-- Lista de produtos escolhidos -->
         <div class="list-section">
             <h2><i class="fas fa-list"></i> Lista de Compras</h2>

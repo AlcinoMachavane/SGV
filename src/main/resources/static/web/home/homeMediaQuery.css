@@ -1,0 +1,21 @@
+/* 1100px */
+@media (max-width: 1100px) {
+    .prices .prices-plan {
+        flex-basis: calc(33.3333333% - 50px);
+        margin-top: 80px;
+    }
+}
+
+/* 800px */
+@media (max-width: 800px) {
+    .prices .prices-plan {
+        flex-basis: calc(50% - 50px);
+    }
+}
+
+/* 600px */
+@media (max-width: 600px) {
+    .prices .prices-plan {
+        flex-basis: calc(100% - 50px);
+    }
+}

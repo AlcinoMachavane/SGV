@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 62.95 50.68">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #233d4d;
+      }
+
+      .cls-2 {
+        fill: url(#Gradiente_sem_nome_39);
+      }
+
+      .cls-3 {
+        fill: url(#Gradiente_sem_nome_14);
+      }
+
+      .cls-4 {
+        fill: url(#Gradiente_sem_nome_38);
+      }
+
+      .cls-5 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-6 {
+        fill: url(#Gradiente_sem_nome_40);
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1"/>
+      <feGaussianBlur result="blur" stdDeviation="1"/>
+      <feFlood flood-color="#000" flood-opacity=".3"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="Gradiente_sem_nome_39" data-name="Gradiente sem nome 39" x1="156.72" y1="-123.51" x2="226.04" y2="-188.69" gradientTransform="translate(107.37 45.44) rotate(-109.51) scale(.75 .47) skewX(37.85)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#233d4d"/>
+      <stop offset=".13" stop-color="#233d4d"/>
+      <stop offset=".21" stop-color="#243f4f"/>
+      <stop offset=".27" stop-color="#294859"/>
+      <stop offset=".33" stop-color="#315669"/>
+      <stop offset=".38" stop-color="#3c6b80"/>
+      <stop offset=".42" stop-color="#4b859d"/>
+      <stop offset=".44" stop-color="#5291aa"/>
+      <stop offset=".54" stop-color="#498198"/>
+      <stop offset="1" stop-color="#233d4d"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_14" data-name="Gradiente sem nome 14" x1="276.76" y1="-206.4" x2="346.6" y2="-261.18" gradientTransform="translate(183.55 85.6) rotate(-109.49) scale(.75 .47) skewX(37.86)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#233d4d"/>
+      <stop offset="0" stop-color="#233d4d"/>
+      <stop offset="0" stop-color="#233d4d"/>
+      <stop offset=".06" stop-color="#2a414c"/>
+      <stop offset=".15" stop-color="#404c4a"/>
+      <stop offset=".27" stop-color="#645f47"/>
+      <stop offset=".4" stop-color="#967a43"/>
+      <stop offset=".54" stop-color="#d59b3e"/>
+      <stop offset=".62" stop-color="#fbb03b"/>
+      <stop offset=".66" stop-color="#d29a3e"/>
+      <stop offset=".76" stop-color="#877244"/>
+      <stop offset=".83" stop-color="#515549"/>
+      <stop offset=".89" stop-color="#2f434b"/>
+      <stop offset=".92" stop-color="#233d4d"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_40" data-name="Gradiente sem nome 40" x1="100.23" y1="106.59" x2="140.14" y2="163.84" gradientTransform="translate(-37.41 30.59) rotate(-70.52) scale(.75 .47) skewX(-37.86)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#233d4d"/>
+      <stop offset="0" stop-color="#233d4d"/>
+      <stop offset=".03" stop-color="#233d4d"/>
+      <stop offset=".17" stop-color="#254051"/>
+      <stop offset=".31" stop-color="#2b4c5d"/>
+      <stop offset=".46" stop-color="#365f72"/>
+      <stop offset=".6" stop-color="#44798f"/>
+      <stop offset=".71" stop-color="#5291aa"/>
+      <stop offset=".83" stop-color="#3a667b"/>
+      <stop offset=".94" stop-color="#294859"/>
+      <stop offset="1" stop-color="#233d4d"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_38" data-name="Gradiente sem nome 38" x1="70.23" y1="55.13" x2="33.93" y2="-4.36" gradientTransform="translate(9.76 9.76) rotate(-25.49) scale(.75 .47) skewX(-37.85)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#233d4d"/>
+      <stop offset="0" stop-color="#233d4d"/>
+      <stop offset="0" stop-color="#233d4d"/>
+      <stop offset=".15" stop-color="#254051"/>
+      <stop offset=".31" stop-color="#2b4c5d"/>
+      <stop offset=".48" stop-color="#365f72"/>
+      <stop offset=".64" stop-color="#44798f"/>
+      <stop offset=".76" stop-color="#5291aa"/>
+      <stop offset=".82" stop-color="#407287"/>
+      <stop offset=".9" stop-color="#305567"/>
+      <stop offset=".96" stop-color="#264354"/>
+      <stop offset="1" stop-color="#233d4d"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-5">
+    <rect class="cls-1" x="25.62" y="19.49" width="11.7" height="11.7" transform="translate(71.64 21) rotate(135)"/>
+    <g>
+      <rect class="cls-2" x=".9" y="12.67" width="29.7" height="14.85" transform="translate(41.1 23.17) rotate(135)"/>
+      <rect class="cls-3" x="32.36" y="23.17" width="29.68" height="14.85" transform="translate(102.21 18.84) rotate(135)"/>
+      <path class="cls-6" d="M11.4,33.66h29.67c0,8.19-6.65,14.85-14.85,14.85H11.4v-14.85h0Z" transform="translate(36.74 -6.52) rotate(45)"/>
+      <path class="cls-4" d="M52.45,14.85l-10.45-10.5c-5.8-5.8-15.2-5.8-20.99,0h0s20.97,20.97,20.97,20.97l10.47-10.47Z"/>
+    </g>
+  </g>
+</svg>
