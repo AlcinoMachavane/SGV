@@ -1,0 +1,54 @@
+
+<header class="header-top" th:fragment="nav"  xmlns:th="http://www.thymeleaf.org">
+    <div class="conteiner-header">
+        <a id="logo" th:href="@{/web/home}" class="header-logo"
+        ><img th:src="@{/images/systemImages/icon.svg}" alt="logotipo do Gemic"
+        /></a>
+        <!--        <div class="div-logo2">-->
+        <a id="logo2" th:href="@{/web/home}" class="header-logo"
+        ><img th:src="@{/images/systemImages/icon.svg}" alt="logotipo do Gemic"
+        /></a>
+        <!--        </div>-->
+        <div class="header-menu">
+            <ul>
+                <li><a th:href="@{/web/home}" class="home">Home</a></li>
+
+                <!--                <li><a th:href="@{pages/blog.html">Blog</a></li>-->
+                <li>
+                    <a th:href="@{/web/funcionalidades}"
+                    >Funcionalidades</a
+                    >
+                </li>
+                <li><a th:href="@{/web/home#prices}">Preçário</a></li>
+                <li><a th:href="@{/web/login}" id="login">Login</a></li>
+                <li><a th:href="@{/web/cadastro}" id="register">Cadastrar</a></li>
+            </ul>
+        </div>
+        <nav class="menu-mobile">
+            <ul>
+                <li>
+                    <div class="menu-mobile-limit">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="menu-mobile-list ds_none">
+                        <li class="midle"><a th:href="@{/web/home}">Home</a></li>
+
+                        <!-- <li class="midle"><a th:href="@{pages/blog.html">Blog</a></li> -->
+                        <li>
+                            <a th:href="@{/web/funcionalidades}"
+                            >Funcionalidades</a
+                            >
+                        </li>
+                        <li><a th:href="@{/web/home#prices}">Preçário</a></li>
+                        <li>
+                            <a th:href="@{/web/login}" id="loginMobile">Login</a>
+                        </li>
+                        <li><a th:href="@{/web/cadastro}" id="registerMobile">Cadastrar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,23 @@
+<!-- src/main/resources/templates/fragments/scripts.html -->
+<div th:fragment="appGeneralScripts" xmlns:th="http://www.thymeleaf.org">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script th:src="@{/app/appSidebar/appSidebar.js}"></script>
+    <script th:src="@{/app/appSidebar/appSidebarMediaQuery.js}"></script>
+
+    <script>
+        document.getElementById('productImage').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            const imagePreview = document.querySelector('.productImagePreview');
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function(e) {
+                    imagePreview.src = e.target.result; // Atualiza a src da imagem com o resultado da leitura
+                }
+
+                reader.readAsDataURL(file); // Lê o arquivo como uma URL de dados
+            }
+        });
+    </script>
+</div>

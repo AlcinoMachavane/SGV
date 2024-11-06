@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+.productImage{
+    height: 100px;
+}
+
+.fa-angles-down{
+font-size: 10pt;
+}
+
+.hiddenRow {
+    display: none;
+
+}
+
+.expandedRow{
+/*    transform: 1s;*/
+/*    transition-duration: 1s;*/
+/*    translate: 1s;*/
+}
+
+.mainRow{
+    background-color: white;
+}
+
+tbody > .mainRow{
+    background-color: var(--myLightGreen);
+}
+
+.subNavBar > .adjustSubNavbarContent > .chooseDate{
+display: flex;
+height: 40px;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+.subNavBar > .adjustSubNavbarContent > .chooseDate > .separate{
+    margin: 0 20px;
+}
+
+.subNavBar > .adjustSubNavbarContent > .chooseDate > label > input{
+padding: 5px;
+border-radius: 5px;
+}
+
+
+/* estilos da tabela */
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 10px;
+    border-radius: 10px;
+    min-width: 400px;
+    box-shadow: var(--my-box-shadow);
+    overflow: hidden;
+    background-color: white;
+}
+
+.styled-table thead tr {
+    color: var(--myLight);
+    text-align: left;
+}
+
+
+.styled-table th, .styled-table td {
+    padding: 15px;
+    text-align: left;
+}
+.styled-table tbody tr {
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* estilos da linha expansível */
+.hiddenRow {
+    padding: 0 !important;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease; /* Transição suave da altura */
+}
+
+.styled-table tbody tr.mainRow{
+    border-bottom: 1px solid #dddddd;
+    background-color: rgb(239, 239, 239) !important;
+    cursor: pointer;
+}
+
+.styled-table tbody tr.mainRow:hover{
+background-color: #e5e5e5 !important;
+}
+
+.styled-table tbody tr:nth-of-type(odd){
+background-color: whitesmoke;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f6f6f6;
+    transition: background-color 0.3s ease; /* Adicionando transição para a mudança de cor de fundo */
+}
+
+.expandedRow {
+    max-height: 200px; /* Altura máxima da linha expandida, ajuste conforme necessário */
+    transition: max-height 0.5s ease; /* Transição suave da altura */
+}
+
+tfoot{
+background-color: #dddddd;
+}
+
+/* ??????????????????????????????????????????? GRAPHIC ??????????????????????????????????????????????? */
+
+.cashflowformationDivGraphic {
+display: flex;
+  flex-basis: calc(65% - 5px);
+  justify-content: center;
+}
+
+.cashflowformationDivGraphic > .graphicSide {
+  width: 70%;
+  padding: 5px;
+}
+
+.cashflowformationDivGraphic > .graphicSide > .chart-conteiner {
+  border-radius: 10px;
+  background-color: white;
+  margin: 10px auto !important;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: var(--my-box-shadow);
+}
+
+
+td > a > i{
+    border-radius: 50%;
+    height: auto;
+    color: var(--myLightGreen);
+    background-color: var(--myLightGreenButton);
+    font-weight: bold;
+    font-size: 10pt;
+    box-shadow: var(--my-box-shadow);
+    border: 1px solid transparent;
+    padding: 2px;
+}
+
+td > a > i:not(last-child){
+    margin-right: 10px;
+    /*border: 2px solid black;*/
+}
+
+td > a > i:hover{
+    box-shadow: var(--my-box-shadow);
+    border: 1px solid var(--myLightGreen);
+}
+
+.actionEye{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+/*    background-color: gold;*/
+}

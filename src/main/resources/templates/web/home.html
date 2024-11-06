@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div  th:replace="~{/web/fragment/head_resources :: head_resources}"></div>
+    <link rel="stylesheet" th:href="@{/web/home/home.css}"/>
+    <link rel="stylesheet" th:href="@{/web/home/homeMediaQuery.css}"/>
+</head>
+
+<body>
+
+<div th:replace="~{web/fragment/header :: nav}"></div>
+<!-- <img src="images/growthBlack.png" class="bg-image" alt="Imagem principal"> -->
+
+<div class="product-BG-black">
+    <div class="content-img-main"></div>
+</div>
+
+<h1 class="mainTitle">
+    Flexgest, Seu negócio em suas mãos.
+</h1>
+
+<main class="main">
+    <div class="main-content">
+<!--        <div class="product-section-container">-->
+            <section class="product-section">
+<!--                <div class="product-article-txt-container">-->
+                    <div class="product-article-txt">
+                        <h1 class="standard-title whatIs">Flexgest</h1>
+
+                        <article class="topics firstTopic">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <h2 class="caption">
+                                O que é Flexgest?
+                            </h2>
+                            <div class="separator">
+                                <p class="topics-paragraph">
+                                    O Flexgest é um sistema de gestão personalizado, desenvolvido
+                                    para atender às necessidades de negócio beseados em stock e vendas.
+                                    O Flexgest oferece recursos para gestão de
+                                    estoque, financeira e usuários, como também, produz diversos relatórios.<br/>
+
+                                    Com uma interface intuitiva e recursos essenciais, o Flexgest
+                                    posiciona-se como a escolha ideal para instituições que
+                                    buscam não apenas eficiência operacional, mas também
+                                    transparência e crescimento sustentável. Ao adotar o
+                                    Flexgest, as instituições podem optimizar processos, tomar
+                                    decisões precisas e melhorar o seu desempenho.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-article-txt loan">
+                        <article class="topics">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                            <h2 class="caption">
+                                Gestão de negócio
+                            </h2>
+                            <div class="separater">
+                                <p class="topics-paragraph">
+                                    Flexgest efectua acompanhamento de entradas e saídas de produtos e finanças forma
+                                    automatizada desde o cadastro do produto até a
+                                    venda, isto é, facilita o processo de gestão de stock de forma que enquanto ocore
+                                    o processo de venda, de forma automatizada e dinâmica reflecte na existência
+                                    gerando ao mesmo tempo históricos e relatórios diversificados para fins de tomada de
+                                     decisão e outro fins. Pare além de alertar automaticamente em relação a quantidade
+                                    existente no estoque quando atinge a quantidade mínima.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-article-txt financial">
+                        <article class="topics">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <h2 class="caption">
+                                Controle Financeiro
+                            </h2>
+                            <div class="separater">
+                                <!--                            <img src="../images/statistic.png">-->
+                                <p class="topics-paragraph">
+                                    O controlo financeiro no negócio é
+                                    crucial por várias razões:
+                                </p>
+                                <h3 class="points">Registos precisos:</h3>
+
+                                <p>
+                                    Manter um diário actualizado de todas as transações é
+                                    fundamental. Isso inclui registo de entradas e saídas de
+                                    capital. O Flexgest automatiza o processo de registos de
+                                    forma precisa e concisa, mitigando desta forma a
+                                    probabilidade de ocorrência de erros.
+                                </p>
+
+                                <h3 class="points">Gestão de Liquidez:</h3>
+
+                                <p>
+                                    A liquidez é essencial para manter contínua operação do
+                                    negócio. O fluxo de caixa é uma ferramenta que ajuda na
+                                    análise da liquidez, permitindo que a instituição evite
+                                    crises financeiras.
+                                </p>
+
+                                <h3 class="points">Avaliação de Risco:</h3>
+
+                                <p>
+                                    O fluxo de caixa ajuda entender melhor sua capacidade de
+                                    suportar despesas operacionais, o que pode ser útil ao
+                                    traçar políticas de gestão de crédito.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-article-txt reports">
+                        <article class="topics">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <h2 class="caption">
+                                Produção de relatórios e recibos
+                            </h2>
+                            <div class="separater">
+                                <p class="topics-paragraph">
+                                    O Flexgest possui ferramentas para gerar e emitir relatórios
+                                    e recibos de pagamento. Ele gera relatórios com datas
+                                    personalizadas e gera recibos no âmbito da venda
+                                    ou para outros fins como extratos de pagamentos
+                                    do cliente ou proposta comercial, o que pode promover
+                                    transparência para sua microcrédito.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-article-txt whoUses">
+                        <article class="topics">
+                            <i class="fa-solid fa-person-circle-question"></i>
+                            <h2 class="caption">
+                                Quem pode usar o Flexgest
+                            </h2>
+                            <div class="separater">
+                                <p class="topics-paragraph">
+                                    O Flexgest foi desenvolvido com uma interface intuitiva que
+                                    facilita o uso, mesmo para usuários sem conhecimentos
+                                    avançados em informática.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+<!--                </div>-->
+            </section>
+<!--        </div>-->
+    </div>
+
+    <div class="prices-div" id="prices">
+        <section class="prices">
+            <h1 class="prices-topic ">Opções de subscrição e preços</h1>
+
+            <article class="prices-plan price-article">
+                <h2 class="prices-subtopic">Mensal</h2>
+                <p class="prices-description">Plano normal</p>
+                <h3 class="prices-price" style="color: limegreen !important">
+                    1,500.00 MZn
+                </h3>
+                <div class="prices-benefit">
+                    <h3 class="prices-benefit-topic">Até 3 usuários</h3>
+                    <h3 class="prices-benefit-topic">Acesso a:</h3>
+                    <div th:replace="~{web/fragment/functionalities :: functionalities}"></div>
+                </div>
+                <!-- <button type="submit" class="btn-flexgest">Contratar</button> -->
+            </article>
+
+            <article class="prices-plan price-article">
+                <h2 class="prices-subtopic">Trimestral</h2>
+                <p class="prices-description" style="color: red !important">
+                    10% de desconto
+                </p>
+                <h3 class="prices-price" style="color: limegreen !important">
+                    3,150.00 MZn
+                </h3>
+                <div class="prices-benefit">
+                    <h3 class="prices-benefit-topic">Até 4 usuários</h3>
+                    <h3 class="prices-benefit-topic">Acesso a:</h3>
+                    <div th:replace="~{web/fragment/functionalities :: functionalities}"></div>
+                </div>
+                <!-- <button type="submit" class="btn-flexgest">Contratar</button> -->
+            </article>
+
+            <article class="prices-plan price-article" id="semi-annual">
+                <h2 class="prices-subtopic">Semestral</h2>
+                <p class="prices-description" style="color: red !important;">
+                    20% de desconto
+                </p>
+                <h3 class="prices-price" style="color: white !important;">
+                    7,200.00 MZn
+                </h3>
+                <div class="prices-benefit">
+                    <h3 class="prices-benefit-topic">Até 5 usuários</h3>
+                    <h3 class="prices-benefit-topic">Acesso a:</h3>
+                    <div th:replace="~{web/fragment/functionalities :: functionalities}"></div>
+                </div>
+                <!-- <button type="submit" class="btn-flexgest">Contratar</button> -->
+            </article>
+
+            <article class="prices-plan price-article">
+                <h2 class="prices-subtopic">Anual</h2>
+                <p class="prices-description" style="color: red !important">
+                    30% de desconto
+                </p>
+                <h3 class="prices-price" style="
+                        color: black !important;
+                        text-decoration: underline !important;
+                     "> 12,600.00 MZn
+                </h3>
+                <div class="prices-benefit">
+                    <h3 class="prices-benefit-topic">Até 7 usuários</h3>
+                    <h3 class="prices-benefit-topic">Acesso a:</h3>
+                    <div th:replace="~{web/fragment/functionalities :: functionalities}"></div>
+                </div>
+                <!-- <button type="submit" class="btn-flexgest">Contratar</button> -->
+            </article>
+
+            <article class="note">
+                <h2 class="caption">Expanda sua Rede de Usuários.</h2>
+                <p>
+                    É possível adicionar utilizadores investindo apenas 100,00 MZN por cada novo membro no seu plano.
+                </p>
+            </article>
+        </section>
+    </div>
+</main>
+
+<div th:replace="~{web/fragment/footer :: footer}"></div>
+
+<div th:replace="~{web/fragment/head_resources :: scripts}"></div>
+
+</body>
+</html>

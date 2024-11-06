@@ -1,18 +1,25 @@
 @charset "UTF-8";
 
+body {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     border: none;
     text-decoration: none;
-    font-family: 'QuattrocentoSans-Regular', sans-serif;
+/*    font-family: 'QuattrocentoSans-Regular', sans-serif;*/
     list-style: none;
     z-index: 0;
     transition: 1s;
 
     margin-block-start: 0;
     margin-block-end: 0;
+
+    scrollbar-width: thin;
+    scrollbar-color: #3d3d3d #000;
 }
 
 html{
@@ -34,11 +41,6 @@ h2{
     font-size: 20px;
 }
 
-@font-face {
-font-family: 'QuattrocentoSans-Regular';
-src: url('../../fonts/Quattrocento_Sans0/QuattrocentoSans-Regular.ttf') format('woff');
-
-}
 
 /* MENU LIST */
 .ds_none {
@@ -49,15 +51,14 @@ src: url('../../fonts/Quattrocento_Sans0/QuattrocentoSans-Regular.ttf') format('
 /*  PALETA DE CORES */
 
 :root {
-    --ID: #97acc1;
-    --IDG: #0669bb;
-    --BG: #ffffff;
-    --BG2: rgb(12, 10, 62);
-    --Font: #000000;
-    --sucess: rgba(0, 128, 0, 0.76);
-    --warnning: rgba(255, 166, 0, 0.733);
-    --negative: rgba(255, 0, 0, 0.733);
---fonte-padrao: ;
+/*    --ID: #97acc1;*/
+/*    --IDG: #0669bb;*/
+/*    --BG: #ffffff;*/
+/*    --BG2: rgb(12, 10, 62);*/
+/*    --Font: #000000;*/
+/*    --sucess: rgba(0, 128, 0, 0.76);*/
+/*    --warnning: rgba(255, 166, 0, 0.733);*/
+/*    --negative: rgba(255, 0, 0, 0.733);*/
 }
 
 /*/////////// SCROLL ///////////*/
@@ -76,12 +77,6 @@ src: url('../../fonts/Quattrocento_Sans0/QuattrocentoSans-Regular.ttf') format('
     background-color: darkgray;
 }
 
-/* Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: #3d3d3d #000;
-}
-
 /* Internet Explorer and Edge Legacy */
 body {
     -ms-overflow-style: none; /* Hides the scrollbar in IE */
@@ -98,7 +93,7 @@ body::-webkit-scrollbar {
 .btn {
     color: #fff;
     font-weight: bold;
-    background-image: linear-gradient(to right, #253889, #3361aa, #36a9e1, #253889);
+    background-image: linear-gradient(to right, #233d4d, #5291aa, #233d4d);
     width: 80%;
     padding: 10px 20px;
     margin: 0 auto;
@@ -111,7 +106,8 @@ body::-webkit-scrollbar {
 
 .btn:hover {
     background-position: right;
-    color: var(--BG);
+/*    color: var(--BG);*/
+    color: #fbb03b;
 }
 
 /* -------------------------------------------------------------------- */

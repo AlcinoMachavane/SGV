@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div  th:replace="~{/web/fragment/head_resources :: head_resources}"></div>
+    <link rel="stylesheet" th:href="@{/web/login/form/twoSidesForm.css}">
+    <link rel="stylesheet" th:href="@{/web/login/form/twoSidesFormMediaQuery.css}">
+</head>
+
+<body class="body-black">
+
+<div th:replace="~{web/fragment/header :: nav}"></div>
+
+
+<main class="mainOfLogin">
+
+    <div class="mainContentJustifier">
+
+        <div class="login-container">
+            <h1>Cadastro</h1>
+            <form class="form">
+
+                <div class="forLableAndInputContainer">
+                    <div class="adjustFeedback">
+                        <div class="forLableAndInput">
+                            <label for="name"><i class="fa-regular fa-circle-user"></i></label>
+                            <input type="text" id="name" name="name" placeholder="Inserir seu nome completo" autofocus>
+                        </div>
+                        <div id="nomeDocumentFeedback" class="feedback"></div>
+                    </div>
+
+                    <div class="adjustFeedback">
+                        <div class="forLableAndInput">
+                            <label for="email"><i class="fa-regular fa-envelope"></i></label>
+                            <input type="email" id="email" name="email" placeholder="Inserir seu email">
+                        </div>
+                        <div id="emailDocumentFeedback" class="feedback"></div>
+                    </div>
+                </div>
+
+                <div class="forLableAndInputContainer">
+                    <h2 class="standardFormSubtitle">Género *</h2>
+                </div>
+
+                <div class="forLableAndInputContainer">
+                    <div class="adjustFeedback">
+                        <div class="radioContainer">
+                            <input class="standardFormInput" type="radio" id="male" value="Masculino" name="personalData.gender">
+                            <label class="standardFormLabel" for="male">Masculino</label>
+
+                            <input class="standardFormInput" type="radio" id="female" value="Femenino" name="personalData.gender">
+                            <label class="standardFormLabel" for="female">Femenino</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forLableAndInputContainer">
+
+                    <div class="adjustFeedback">
+                        <div class="forLableAndInput">
+                            <label for="senha"><i class="fa-solid fa-key"></i></label>
+                            <input type="password" id="senha" name="senha" placeholder="Inserir sua senha">
+                            <button type="button" class="toggle-password"><i class="fa-solid fa-eye-slash"></i></button>
+                        </div>
+                        <div id="senhaDocumentFeedback" class="feedback"></div>
+                    </div>
+
+                    <div class="adjustFeedback">
+                        <div class="forLableAndInput">
+                            <label for="confirmPassword"><i class="fa-solid fa-key"></i></label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmar a senha">
+                            <button type="button" class="toggle-password"><i class="fa-solid fa-eye-slash"></i></button>
+                        </div>
+                        <div id="confirmPasswordDocumentFeedback" class="feedback"></div>
+                    </div>
+                </div>
+
+                <div class="forLableAndInputContainer">
+                    <div class="adjustFeedback">
+                        <div class="forLableAndInput">
+                            <label for="contact"><i class="fa-solid fa-mobile-screen-button"></i></label>
+                            <input type="tel" id="contact" name="contact" placeholder="Inserir seu contacto">
+                        </div>
+                        <div id="contactDocumentFeedback" class="feedback"></div>
+                    </div>
+
+                    <div class="adjustFeedback">
+                        <div class="forLableAndInput">
+                            <label for="companyName"><i class="fa-regular fa-building"></i></label>
+                            <input type="text" id="companyName" name="companyName" placeholder="Inserir o nome da empresa">
+                        </div>
+                        <div id="companyNameDocumentFeedback" class="feedback"></div>
+                    </div>
+                </div>
+
+
+                <p class="infoTexte helpToLogin"><a th:href="@{/web/login}">Voltar ao login</a></p>
+                <a type="submit" th:href="@{/web/login}" class="btn btn-default">Submeter</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="article">
+        <p><a href="https://www.guizois.com/">Copyright © 2023 Guizo Informática e Serviços</a></p>
+    </div>
+</main>
+
+<div th:replace="~{web/fragment/head_resources :: scripts}"></div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt">
+<head th:replace="~{app/fragments/appHead/appHeadWithInfoContainer :: appHeadWithInfoContainer}"></head>
+
+<!-- MOBILE BUTTON FOR SIDEBAR-->
+<div th:replace="~{app/fragments/appSidebar :: sidebarFragment}"></div>
+
+<main class="mainContent">
+    <!-- navBar.html -->
+    <div th:replace="~{app/fragments/appNavbar :: navbarFragment}"></div>
+
+    <!--  Container FOR MAIN CONTENT-->
+    <div class="mainContentJustifyWithoutSubMenu">
+
+        <section class="infoSection">
+            <article class="articleSection">
+                <h1 class="infoTitle">Qualquer novidade informaremos aqui</h1>
+                <p class="infoParagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga rem reiciendis dolorem corrupti, ab nostrum blanditiis quam facere nihil voluptates, rerum enim fugiat. Maiores, ex quo totam laboriosam excepturi voluptatum.</p>
+                <h2 class="infoCaption">Primeiro assunto</h2>
+                <p class="infoParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, vel repellendus. Quidem, veniam quo! Necessitatibus, earum doloribus? Culpa, quo nisi repudiandae debitis inventore, magnam tenetur, vitae perspiciatis labore vel?</p>
+            </article>
+        </section>
+
+    </div>
+
+    <div th:replace="~{app/fragments/appFooter :: footerFragment}"></div>
+
+</main>
+
+<div th:replace="~{app/fragments/appScripts/appGeneralScripts :: appGeneralScripts}"></div>
+
+</body>
+</html>

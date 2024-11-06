@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* Estilo do tooltip */
+.totalExistence {
+    display: none;
+    position: absolute;
+    background-color: #233d4de8;
+    max-height: 200px;
+    color: var(--myLightGreen);
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    text-align: left;
+    overflow: auto;
+}
+
+.location{
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+.quantity{
+    display: flex;
+    flex-direction: row;
+    max-height: 30px;
+    width: 100%;
+    font-weight: lighter;
+    color: whitesmoke;
+    font-size: 12pt;
+    background-color: var(--myBlue);
+    border-radius: 10px;
+    padding: 0 5px;
+    border: 1px solid var(--myLightGreen);
+    margin-bottom: 5px;
+}

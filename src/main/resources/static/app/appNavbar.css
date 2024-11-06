@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+.mainContent {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar, .subNavbar {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.10);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 10px;
+}
+
+.subNavbar {
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+/* Estilos para os itens da navbar */
+.navbar > .navbarLink > .navbarUserName {
+    display: flex;
+    align-items: center;
+    color: var(--myBlue);
+    font-weight: bold;
+}
+
+.navbar > .navbarLink > .navbarUserName > i {
+    margin-left: 5px;
+}
+
+/* Botão para visualização móvel */
+#buttonForBarMobile {
+    display: none;
+    position: absolute;
+    padding: 5px 10px; /* Combinado */
+}
+
+.adjustSubNavbarContent {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    min-width: 230px;
+    /*margin-left: 20px; */
+}
+
+.adjustSubNavbarContent:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.profile {
+    align-items: center;
+}
+
+<style>
+
+/* Estilos da Top Bar com Scroll Horizontal */
+
+.top-bar {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.category-scroll {
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.category {
+    flex: none;
+    padding: 8px;
+    margin: 0 10px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+    background-color: #f8f8f8;
+    border-radius: 25px;
+}
+
+.category:hover {
+    text-decoration: underline;
+}
+
+.category-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilos da Top Bar com Scroll Horizontal */
+
+.top-bar {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.category-scroll {
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.category {
+    flex: none;
+    padding: 8px;
+    margin: 0 10px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+    background-color: #f8f8f8;
+    border-radius: 25px;
+}
+
+.category:hover {
+    text-decoration: underline;
+}
+
+.category-scroll::-webkit-scrollbar {
+    display: none;
+}
+

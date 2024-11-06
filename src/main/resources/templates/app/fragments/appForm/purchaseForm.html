@@ -1,0 +1,87 @@
+<div id="genericProductFormID" class="modal" th:fragment="purchaseForm" xmlns:th="http://www.thymeleaf.org">
+    <div class="standardForm">
+        <h1 class="formTitle"><i class="fas fa-cart-plus"></i> Adicionar Produto à Lista</h1>
+
+        <div class="forInputsContainer">
+            <div class="forInputs">
+                <label class="standardFormLabel" for="productName">Produto</label>
+                <select id="productName" name="productName" class="searchable-input" autofocus>
+                    <option></option>
+                    <option>Massa Mariana</option>
+                    <option>Amendoim</option>
+                    <option>Camiseta</option>
+                </select>
+                <div id="productNameDocumentFeedback" class="feedback"></div>
+            </div>
+        </div>
+
+        <div class="forInputsContainer">
+            <div class="forInputs">
+                <label class="standardFormLabel" for="barcode">Código de barras</label>
+                <input class="standardFormInput" type="text" id="barcode" name="barcode">
+                <div id="barcodeDocumentFeedback" class="feedback"></div>
+            </div>
+
+            <div class="forInputs">
+                <label class="standardFormLabel" for="lotNumber">Número de lote</label>
+                <input class="standardFormInput" type="text" id="lotNumber" name="lotNumber">
+                <div id="lotNumberDocumentFeedback" class="feedback"></div>
+            </div>
+
+            <div class="forInputs">
+                <label class="standardFormLabel" for="productWarranty">Garantia *</label>
+                <input class="standardFormInput" type="text" id="productWarranty" name="productWarranty">
+                <div id="productWarrantyDocumentFeedback" class="feedback"></div>
+            </div>
+        </div>
+
+        <div class="forInputsContainer">
+            <div class="forInputs">
+                <label class="standardFormLabel" for="quantity">Quantidade</label>
+                <input class="standardFormInput" type="text" id="quantity" name="quantity" min="1" value="1">
+                <div id="quantityDocumentFeedback" class="feedback"></div>
+            </div>
+
+
+            <div class="forInputs">
+                <label class="standardFormLabel" for="shelf">Prateleira</label>
+                <input class="standardFormInput" type="text" id="shelf" name="shelf">
+                <div id="shelfDocumentFeedback" class="feedback"></div>
+            </div>
+
+
+            <div class="forInputs">
+                <label class="standardFormLabel" for="expiryDate">Data de validade</label>
+                <input class="standardFormInput" type="date" id="expiryDate" name="expiryDate">
+                <div id="expiryDateDocumentFeedback" class="feedback"></div>
+            </div>
+        </div>
+
+        <div class="forInputsContainer">
+            <div class="forInputs">
+                <label class="standardFormLabel" for="alertDays">Dias para alerta de expiração</label>
+                <input class="standardFormInput" type="text" id="alertDays" name="alertDays" min="0">
+                <div id="alertDaysDateDocumentFeedback" class="feedback"></div>
+            </div>
+
+            <div class="forInputs">
+                <label class="standardFormLabel" for="price">Preço unitário</label>
+                <input class="standardFormInput" type="text" id="price" name="price" value="0" step="0.01">
+                <div id="priceDocumentFeedback" class="feedback"></div>
+            </div>
+
+            <div class="forInputs">
+                <label class="standardFormLabel" for="salePrice">Preço de Venda</label>
+                <input class="standardFormInput" type="text" id="salePrice" name="salePrice" value="0" step="0.01">
+                <div id="salePriceDocumentFeedback" class="feedback"></div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a class="btn btn-cancel" type="reset">Descartar</a>
+            <a class="btn btn-success" th:href="@{/app/lista_de_grossario}" id="addProductBtn" type="button">Submeter</a>
+        </div>
+
+
+    </div>
+</div>

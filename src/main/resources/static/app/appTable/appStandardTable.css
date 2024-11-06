@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+.tableConteiner{
+    max-width: 1300px;
+    background-color: white;
+    margin: 40px 5px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: var(--my-box-shadow);
+    overflow-y: auto;
+}
+
+.actionEye{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    /*background-color: gold;*/
+
+}
+
+td > .linkButton > i{
+    border-radius: 50%;
+    height: auto;
+    color: var(--myBlue);
+    background-color: var(--myLightGreenButton);
+    font-weight: bold;
+    font-size: 10pt;
+    box-shadow: var(--my-box-shadow);
+    border: 1px solid transparent;
+    padding: 2px;
+}
+
+td > .linkButton > i:not(last-child){
+    margin-right: 10px;
+    /*border: 2px solid black;*/
+}
+
+td > .linkButton > i:hover{
+    box-shadow: var(--my-box-shadow);
+    border: 1px solid var(--myLightGreen);
+}
+
+
+/*///////////////////////////*/
+
+
+/*.list-section table {*/
+/*width: 100%;*/
+/*border-collapse: collapse;*/
+/*max-width: 1200px;*/
+/*}*/
+
+table th, table td {
+padding: 10px;
+border-bottom: 1px solid #ccc;
+text-align: left;}
+
+table th {
+background-color: #f0f0f0;
+}

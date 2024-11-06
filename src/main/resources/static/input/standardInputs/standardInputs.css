@@ -1,5 +1,64 @@
 @charset "UTF_8";
 
+/*.form-input          Para uso geral, se quiser aplicar a todos os inputs de uma só vez */
+/*.text-input          Para input[type="text"] */
+/*.email-input         Para input[type="email"] */
+/*.password-input      Para input[type="password"] */
+/*.number-input        Para input[type="number"] */
+/*.tel-input           Para input[type="tel"] */
+/*.date-input          Para input[type="date"] */
+/*.color-input         Para input[type="color"] */
+/*.datetime-input      Para input[type="datetime-local"] */
+/*.hidden-input        Para input[type="hidden"] */
+/*.image-input         Para input[type="image"] */
+/*.month-input         Para input[type="month"] */
+/*.range-input         Para input[type="range"] */
+/*.reset-input         Para input[type="reset"] */
+/*.search-input        Para input[type="search"] */
+/*.submit-input        Para input[type="submit"] */
+/*.time-input          Para input[type="time"] */
+/*.url-input           Para input[type="url"] */
+/*.week-input          Para input[type="week"] */
+/*.checkbox-input      Para input[type="checkbox"] */
+/*.radio-input         Para input[type="radio"] */
+/*.textarea-input      Para textarea */
+/*.select-input        Para select */
+
+/*__________________________________________________________________________________________________*/
+.form-input,
+.text-input,
+.email-input,
+.password-input,
+.number-input,
+.tel-input,
+.date-input,
+.color-input,
+.datetime-input,
+.hidden-input,
+.image-input,
+.month-input,
+.range-input,
+.reset-input,
+.search-input,
+.submit-input,
+.time-input,
+.url-input,
+.week-input,
+/*.checkbox-input,*/
+/*.radio-input,*/
+.textarea-input,
+.select-input
+{
+    min-width: 200px;
+    padding: 8px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    resize: vertical;
+
+}
 
 input[type="text"],
 input[type="email"],
@@ -19,23 +78,17 @@ input[type="submit"],
 input[type="time"],
 input[type="url"],
 input[type="week"],
-/* input[type="checkbox"], */
-/* input[type="radio"], */
+ input[type="checkbox"],
+ input[type="radio"],
 textarea,
-select {
-    min-width: 200px;
+select,
+input
+{
     border-radius: 5px;
-    padding: 8px;
     border: 1px solid rgba(128, 128, 128, 0.281);
-    margin-bottom: 5px;
-    box-sizing: border-box;
-    width: 100%;
     font-size: 12px;
     outline: none;
     transition: 0.3s ease;
-    display: block;
-    margin-top: 5px;
-    resize: vertical;
     background-color: transparent;
     color: #333;
     -webkit-appearance: none;
@@ -45,11 +98,11 @@ select {
 
 }
 
-input[type="radio"]:not(:first-child){
+.radio-input:not(:first-child){
     margin-left: 20px;
 }
 
-input[type="radio"]{
+.radio-input{
     margin-right: 5px;
 }
 
@@ -61,6 +114,4 @@ input[type="radio"]{
     justify-content: flex-start;
 }
 
-input {
-    border: 1px solid whitesmoke;
-}
+

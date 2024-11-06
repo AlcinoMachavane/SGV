@@ -1,22 +1,53 @@
 @charset "UTF-8";
 
 .main {
-    width: 100%;
     margin: 0 auto;
+    justify-content: center;
 }
 
-.firstTopic{
-    margin-top: 80px;
+.main-content{
+
 }
 
-.product-section .product-article-txt{
+.product-section-container {
+    display: flex;
+    flex-basis: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-section {
+    display: flex;
+    flex-basis: 100%;
+    margin: 20px 40px;
+    transition: 1s;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.product-article-txt-container{
+/* background-color: red; */
+    justify-content: center;
+    padding: 10px;
+    /* padding: 30px; */
+}
+
+.product-article-txt{
     background-color: white;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.213);
+    max-width: 800px;
+    text-align: justify;
+    margin: 40px auto;
+    /* background-color: #233D4D; */
+    margin-bottom: 40px;
 }
 
-.whatIsGemic > h1{
+.whatIs{
     margin: 40px;
     font-size: 40pt;
     text-align: center;
@@ -24,24 +55,21 @@
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 40px;
-    color: #3361aa;
-    border: 1px solid #3361aa;
-    box-shadow: 1px 1px 10px  #36a8e193;
+    color: #233d4d;
+    border: 1px solid #fbb03b;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.213);
 }
 
-.product-section .product-article-txt .topics h2 {
+.standard-title,.caption{
+    margin-bottom: 10px;
+}
+
+.caption {
     font-size: 18pt;
-    color: #233D4D;
+    color: #233d4d;
     margin-bottom: 20px;
     text-align: center;
     justify-content: center;
-}
-
-.product-section .product-article-txt .topics i{
-    font-size: 50px;
-    color: #3361aa;
-    margin-bottom: 10px;
-
 }
 
 .topics {
@@ -53,17 +81,23 @@
 .topics > i{
     text-align: center;
     box-shadow: none!important;
+    font-size: 50px;
+    color: #fbb03b;
+    margin-bottom: 10px;
+
 }
 
-.product-section .product-article-txt .topics .separater h3 {
+.firstTopic{
+    margin-top: 80px;
+}
+
+.points {
     margin: 30px 0 10px 0;
     /* background-color: red; */
 }
 
-/*/////////////////////////////////////////////////////*/
-        /*            PRODUCT SECTION                      */
-        /*/////////////////////////////////////////////////////*/
 
+/*////////////////////////////////////////////////////////////*/
 /************** Precos ********/
 
 .prices-div {
@@ -83,7 +117,7 @@
     flex-wrap: wrap;
 }
 
-.prices .prices-topic {
+.prices-topic {
     display: flex;
     flex-basis: 100%;
     justify-content: center;
@@ -95,7 +129,7 @@
     border-bottom: 1px solid lightgray;
 }
 
-.prices .prices-plan {
+.prices-plan {
     display: flex;
     flex-wrap: wrap;
     flex-basis: calc(25% - 50px);
@@ -106,6 +140,10 @@
     overflow: hidden;
     justify-content: center;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+.price-article:hover {
+    box-shadow: 5px 5px 15px #fbb03b51;
 }
 
 .prices #mensal {
@@ -119,7 +157,7 @@
 
 
 .prices #semi-annual {
-    background-color: rgba(53, 166, 222, 0.5);
+    background-color: #fbb03b;
     translate: 0 -20px;
 }
 
@@ -133,10 +171,6 @@
     box-shadow: 5px 5px 15px rgba(252, 202, 70, 0.2);
 }
 
-.prices .gemic-article:hover {
-    box-shadow: 5px 5px 15px rgba(53, 166, 222, 0.4);
-}
-
 .prices .prices-subtopic {
     display: flex;
     flex-basis: 100%;
@@ -144,35 +178,35 @@
     justify-content: center;
 }
 
-.prices .prices-description {
+.prices-description {
     display: flex;
     flex-basis: 100%;
     margin: 0 0 20px 0;
     justify-content: center;
 }
 
-.prices .prices-price {
+.prices-price {
     display: flex;
     flex-basis: 100%;
     margin: 0 0 20px 0;
     justify-content: center;
 }
 
-.prices .prices-benefit {
+.prices-benefit {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
     justify-content: center;
 }
 
-.prices .prices-benefit-topic {
+.prices-benefit-topic {
     display: flex;
     flex-basis: 100%;
     margin: 0 0 10px 0;
     justify-content: center;
 }
 
-.prices .prices-benefit ul {
+.benefit-list {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
@@ -182,7 +216,7 @@
     line-height: 20pt;
 }
 
-.prices .prices-benefit ul li {
+.benefit-items {
     display: flex;
     flex-basis: 100%;
     justify-content: center;
@@ -190,11 +224,11 @@
     list-style: square !important;
 }
 
-.prices .prices-benefit ul li > a{
+.benefit-items > a{
     color: #161616;
 }
 
-.prices .prices-benefit ul li .fa-circle-info {
+.benefit-items .fa-circle-info {
     font-size: 8pt;
     color: rgba(0, 0, 0, 0.49);
     justify-content: center;
@@ -203,52 +237,13 @@
     margin-left: 2px;
 }
 
-.prices .prices-benefit ul li .fa-circle-info:hover {
+.benefit-items .fa-circle-info:hover {
     color: #3361aa;
     font-size: 10pt;
 }
 
-button.btn-vp {
-    margin: 20px auto;
-    transition: .5s;
-    border-radius: 50px;
-    font-weight: bold;
-    background-image: linear-gradient(to right, #233D4D, #233D4D, #233D4D, rgba(252, 202, 70, 1));
-    width: 150px;
-    padding: 5px;
-    background-size: 200%;
-    font-size: 12pt;
-    color: rgba(252, 202, 70, 1);
-}
 
-
-.btn-vp:hover {
-    color: white;
-    background-position: right;
-    background-image: linear-gradient(to right, #233D4D, #233D4D, rgba(252, 202, 70, 1), #233D4D, #233D4D);
-}
-
-.btn-gemic {
-    margin: 20px auto;
-    transition: .5s;
-    color: #cfeaff;
-    border-radius: 50px;
-    font-weight: bold;
-    background-image: linear-gradient(to right, #3361aa, #3361aa, #3361aa, #36a9e1);
-    width: 150px;
-    padding: 5px;
-    background-size: 200%;
-    font-size: 12pt;
-}
-
-.btn-gemic:hover {
-    color: white;
-    background-position: right;
-    background-image: linear-gradient(to right, #3361aa, #3361aa, #36a9e1, #3361aa);
-}
-
-
-/* _Note about prices */
+/* NOTA ACERCA DOS PREÇOS */
 
 .note{
     display: flex;
@@ -261,7 +256,7 @@ button.btn-vp {
     padding: 20px 10px;
 }
 
-.note > h2{
+.note > .caption{
     display: flex;
     flex-basis: 100%;
     border-bottom: 1px solid #3361aa32;

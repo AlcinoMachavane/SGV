@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div  th:replace="~{/web/fragment/head_resources :: head_resources}"></div>
+    <link rel="stylesheet" th:href="@{/web/functions/mainGemicFunctions.css}">
+</head>
+<body class="body-black">
+<h1 class="SITE">GUIZO</h1>
+<div th:replace="~{/web/fragment/header :: nav}"></div>
+
+<!-- <img th:src="@{/images/computer.jpg" class="bg-image" alt="Imagem principal" style="opacity: red;"> -->
+
+<div class="product-BG-black-vp">
+    <div class="content-img-main-vp">
+
+    </div>
+</div>
+<h1 class="mainTitle">
+    Conheça as funcionalidades do seu software de gestão de negócio.
+</h1>
+
+<main class="main-p">
+    <main class="main-product">
+        <div class="div-product-gemic">
+
+            <section class="product-section">
+                <div class="div-product-section">
+
+                    <div class="article-img dashboard">
+                        <img th:src="@{/images/webPageImages/dashboard.png}" class="scroll-image" alt="Logo dashboard">
+                    </div>
+
+                    <div class="article-img usuarios">
+                        <img th:src="@{/images/webPageImages/admin.png}" class="scroll-image" alt="Logo usuarios">
+                    </div>
+
+                    <div class="article-img produtos">
+                        <img th:src="@{/images/webPageImages/product.png}" class="scroll-image" alt="Logo produtos">
+                    </div>
+
+                    <div class="article-img vendas">
+                        <img th:src="@{/images/webPageImages/sales.png}" class="scroll-image" alt="Logo vendas">
+                    </div>
+
+                    <div class="article-img relatorios">
+                        <img th:src="@{/images/webPageImages/reports.png}" class="scroll-image" alt="Logo relatorios">
+                    </div>
+
+                    <div class="article-img diario">
+                        <img th:src="@{/images/webPageImages/daily.png}" class="scroll-image" alt="Logo diario">
+                    </div>
+
+                    <div class="article-img caixa">
+                        <img th:src="@{/images/webPageImages/cashFlow.png}" class="scroll-image" alt="Logo caixa">
+                    </div>
+                </div>
+
+                <div class="div-product-article-txt">
+
+                    <div class="product-article-txt whatIsGemicFunctions">
+
+                        <article class="topics" id="dashboard">
+                            <h2>Dashboard</h2>
+                            <div class="separater">
+
+                                <p class="topics-paragraph">
+                                    O dashboard do Flexgest proporciona um resumo do estado da empresa com informações
+                                    atualizadas.<br>
+                                    Ele apresenta informações como a situação do estoque, produtividade e o resumo do estado financeiro da empresa.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-article-txt loanFunctions" id="gestao-de-usuarios">
+                        <article class="topics">
+                            <h2>Gestão de Usuários</h2>
+                            <div class="separater">
+
+                                <p class="topics-paragraph">
+                                    O Flexgest proporciona um controle de usuários
+                                    alinhado com seus níveis de acesso e desempenho. As
+                                    atividades são registradas por usuário.
+
+                                    O Flexgest simplifica a gestão de usuários por meio de processos como definição de
+                                    níveis de acesso, atribuição de cargos e acompanhamento de desempenho individual.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-article-txt financialFunctions" id="gestao_de_produtos">
+                        <article class="topics">
+                            <h2>Produtos</h2>
+                            <div class="separater">
+
+                                <p class="topics-paragraph">
+                                    O Flexgest permite que faça o registo de seus produtos de forma categorizada, o que flexibiliza o processo de venda
+                                    mesmo em momentos de grande demanda.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-article-txt reportsFunctions" id="gestao_de_estoque">
+                        <article class="topics">
+                            <h2>Gestão de estoque</h2>
+                            <div class="separater">
+
+                                <p class="topics-paragraph">
+                                    O Flexgest permite uma gestão eficiente da existência no estoque, permitindo que monitore
+                                    as quantidades existentes e a necessidade de reposição de produtos no estoque ou a prioridade de saída
+                                    de produtos com base nos prazos de validade. Isso é possível
+                                    através de alertas personalizáveis e ajuda na redução de perdas.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-article-txt whoUsesFunctions" id="relatorios">
+                        <article class="topics">
+                            <h2>Relatórios</h2>
+                            <div class="separater">
+
+                                <p class="topics-paragraph">
+                                    O Flexgest oferece relatório personalizável e possibilita a exportação para formatos
+                                    PDF, XLSX e Word, permitindo a impressão dos mesmos com uso de material adequado.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-article-txt dailyFunctions" id="diario-de-movimentos">
+                        <article class="topics">
+                            <h2>Diário de movimentos</h2>
+                            <div class="separater">
+
+                                <p class="topics-paragraph">
+                                    O Flexgest possibilita o registo e apresentação diária de todos os movimentos
+                                    financeiros, abrangendo desde transações relacionadas a aquisições e vendas até despesas,
+                                    custos, investimentos, entre outros. O que permite que tenha uma visão completa e
+                                    organizada das operações diárias.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-article-txt cashFunctions" id="fluxo-de-caixa">
+                        <article class="topics">
+                            <h2>Fluxo de caixa</h2>
+                            <div class="separater">
+
+                                <p class="topics-paragraph">
+                                    O fluxo de caixa automatizado do Flexgest, fornece uma visão
+                                    clara e atualizada das entradas e saídas de capital. O que permite um controle
+                                    das finanças, ajuda na tomada de decisões informadas, previne crises de
+                                    liquidez.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+</main>
+
+<div th:replace="~{web/fragment/footer :: footer}"></div>
+
+</body>
+</html>

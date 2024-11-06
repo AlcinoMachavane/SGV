@@ -171,3 +171,7 @@
     text-decoration: underline #161616;
 }
 
+/* Simple footer*/
+.article > p > a{
+    color: #161616;
+}

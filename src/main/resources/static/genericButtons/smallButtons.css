@@ -8,8 +8,8 @@
 .smallButton > i{
     border-radius: 50%;
     height: auto;
-    color: var(--myLightBlue);
-    background-color: var(--myLightBlueButton);
+    color: var(--myLightGreen);
+    background-color: var(--myLightGreenButton);
     font-weight: bold;
     font-size: 10pt;
     box-shadow: var(--my-box-shadow);
@@ -23,5 +23,5 @@
 
 .smallButton > i:hover{
     box-shadow: var(--my-box-shadow);
-    border: 1px solid var(--myLightBlue);
+    border: 1px solid var(--myLightGreen);
 }
