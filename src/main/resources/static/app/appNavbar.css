@@ -62,7 +62,7 @@
     align-items: center;
 }
 
-<style>
+
 
 /* Estilos da Top Bar com Scroll Horizontal */
 
@@ -114,6 +114,7 @@
     overflow-x: auto;
     white-space: nowrap;
     padding: 10px 0;
+    background-color: #F8F8F8;
 }
 
 .category {
@@ -124,7 +125,8 @@
     color: #333;
     cursor: pointer;
     transition: color 0.3s;
-    background-color: #f8f8f8;
+/*    background-color: #f8f8f8;*/
+    border: 1px solid #DDDDDD;
     border-radius: 25px;
 }
 
